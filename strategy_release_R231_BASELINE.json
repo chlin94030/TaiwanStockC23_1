@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "requires_engine": "23.1.0-benchmark-first",
+  "release_id": "R231-BENCHMARK-FIRST-BASELINE",
+  "note": "Predeclared static hypotheses, not tested optimal weights.",
+  "models": {
+    "0050_ONLY": {},
+    "PRICE_RS_CONTROL": {
+      "rs_0050_120": 0.45,
+      "momentum120_skip20": 0.25,
+      "high252": 0.2,
+      "residual_lowvol60": 0.1
+    },
+    "GROWTH_RS_40_35_15_10": {
+      "revenue_yoy_3m": 0.12,
+      "revenue_acceleration": 0.18,
+      "eps_growth_yoy": 0.1,
+      "rs_0050_120": 0.13,
+      "momentum120_skip20": 0.12,
+      "high252": 0.1,
+      "gross_margin_delta": 0.08,
+      "residual_lowvol60": 0.07,
+      "institutional_flow5": 0.1
+    },
+    "GROWTH_NO_FLOW_ABLATION": {
+      "revenue_yoy_3m": 0.16,
+      "revenue_acceleration": 0.2,
+      "eps_growth_yoy": 0.14,
+      "rs_0050_120": 0.14,
+      "momentum120_skip20": 0.13,
+      "high252": 0.1,
+      "gross_margin_delta": 0.07,
+      "residual_lowvol60": 0.06
+    }
+  },
+  "release_sha": "e0c5a1f4a2ded23a"
+}

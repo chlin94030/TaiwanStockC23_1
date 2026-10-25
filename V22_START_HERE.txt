@@ -1,0 +1,13 @@
+Alpha Radar V22 快速開始
+
+1. 直接部署完整包，入口 app.py。
+2. 工作模式選「V22快速策略驗證」。
+3. 採用既有V21.6準備完成的資料，不需重新下載全市場。
+4. 第一次可執行「一次母池校準」：ADV200 / ADV300 / KOSTO250 / KOSTO300。
+5. 選定母池後，把 v22_settings.json 的 pool_rule 固定；後續不要每次重跑母池。
+6. 平常修改 v22_profiles.json 中 A1/A2/B3 因子及權重，按「快速驗證」。
+7. 下載 V22_TEST_REPORT.zip，依 strategy_by_stage / factor_sensitivity / failure_analysis 做下一輪調整。
+8. 只有模型設計凍結後，才按一次「凍結確認」。同一保留期不得換權重重開。
+
+預設：KOSTO300、10個資金槽；A1 100%、A2 85%、A3/B1/B2 0%、B3 60%且須止穩確認。
+這些是研究假說，不是原書公式或自動交易授權。

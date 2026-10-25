@@ -1,0 +1,18 @@
+# Alpha Radar V23.1 (includes V22 legacy) - Python 3.14 Streamlit Cloud deployment compatibility.
+# All pinned versions have prebuilt CPython 3.14 Linux wheels where needed.
+# Python 3.13 is also supported by these same pins.
+numpy==2.3.5
+pandas==2.3.3
+requests==2.32.5
+streamlit==1.52.2
+pyarrow==22.0.0
+yfinance==0.2.66
+# Optional whole-market bulk transport; lazy-imported and only used with credentials.
+finlab==2.0.21
+
+# V22.3 optional walk-forward GBM challenger and Excel research workbook.
+scikit-learn==1.9.1
+openpyxl==3.1.5
+
+# V23.1: optional public MOPS historical revenue HTML table parser.
+lxml==6.1.3

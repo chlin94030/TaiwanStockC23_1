@@ -1,0 +1,18 @@
+Alpha Radar V22.4.1 — Start here
+
+Normal workflow:
+1. Keep data/. Do not rebuild the database.
+2. Open V22快速策略驗證.
+3. Press only “開始／繼續完整驗證”.
+4. The program automatically reuses a previous pool study or runs it once, freezes the selected pool, compares manual / hybrid_ic / ic_adaptive for 5/20/60 sessions, and builds V22_TEST_REPORT.zip + V22_TEST_REPORT.xlsx.
+5. Download the report and use it for the next adjustment.
+6. Do NOT open the final holdout while tuning. “最終確認” is advanced-only and should be used once after pool, factors and weights are frozen.
+
+Resume behavior:
+- If validation stops, completed data and pool calibration are retained.
+- After redeploying a fix, press “開始／繼續完整驗證” again.
+- Old cached null numeric fields are treated as missing evidence instead of crashing with NoneType arithmetic.
+
+No automatic orders are authorized and no future profitability is established.
+
+V22.4.1 fix: KOSTO250/KOSTO300 are V22-derived monthly pools. They are now frozen with a V22-specific integrity lock and no longer need to exist as native labels in the pinned snapshot. Existing data and pool-study checkpoints can be reused.

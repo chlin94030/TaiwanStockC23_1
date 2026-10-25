@@ -1,0 +1,30 @@
+{
+  "schema": 3,
+  "candidates": [
+    {
+      "name": "K23_GBM_challenger_research_only",
+      "model_type": "gbm_challenger",
+      "selection_eligible": false,
+      "horizon_stage_weights": {
+        "5": {
+          "A1": {"ks_confirmed_recovery": 0.30, "ks_double_bottom": 0.25, "ks_absorption": 0.20, "reversal5": 0.25},
+          "A2": {"residual_momentum20": 0.35, "ks_demand_balance": 0.20, "money_flow20": 0.20, "ks_quiet_strength": 0.25},
+          "B3": {"ks_capitulation_reversal": 0.35, "ks_double_bottom": 0.25, "reversal5": 0.25, "ks_absorption": 0.15}
+        },
+        "20": {
+          "A1": {"ks_confirmed_recovery": 0.25, "ks_double_bottom": 0.20, "ks_absorption": 0.25, "residual_momentum20": 0.30},
+          "A2": {"residual_momentum20": 0.30, "trend_eff60": 0.25, "ks_patience": 0.25, "ks_demand_balance": 0.20},
+          "B3": {"ks_capitulation_reversal": 0.30, "ks_double_bottom": 0.25, "ks_absorption": 0.20, "residual_momentum20": 0.25}
+        },
+        "60": {
+          "A1": {"residual_momentum60": 0.25, "ks_confirmed_recovery": 0.20, "ks_absorption": 0.20, "residual_lowvol60": 0.35},
+          "A2": {"residual_momentum60": 0.30, "trend_eff60": 0.25, "ks_patience": 0.25, "residual_lowvol60": 0.20},
+          "B3": {"ks_double_bottom": 0.25, "ks_capitulation_reversal": 0.25, "residual_momentum60": 0.25, "residual_lowvol60": 0.25}
+        }
+      },
+      "stage_exposure": {"A1": 1.0, "A2": 0.85, "A3": 0.0, "B1": 0.0, "B2": 0.0, "B3": 0.60, "UNKNOWN": 0.0},
+      "discipline": true,
+      "gbm": {"lookback_cases": 36, "min_history_cases": 12, "max_iter": 80, "max_depth": 3, "learning_rate": 0.05, "l2_regularization": 1.0}
+    }
+  ]
+}

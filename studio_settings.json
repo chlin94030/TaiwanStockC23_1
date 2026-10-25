@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "top_k": 10,
+  "capital": 1000000.0,
+  "fast_folds": 3,
+  "fast_bootstrap_samples": 200,
+  "final_bootstrap_samples": 2000,
+  "cost_overrides": {}
+}

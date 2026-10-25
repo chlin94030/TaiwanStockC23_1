@@ -1,0 +1,13 @@
+【V23.1 這次只需要部署一次】
+
+1. 先把舊 App 的 V21_DATABASE.zip 下載備份（如有）；不要刪 data/。
+2. 解壓 AlphaRadar_V23_1_Full_Integrated_Under100.zip，將其中檔案一次上傳到原 GitHub repo 根目錄並 Commit。
+   注意：GitHub 不會自動解壓你上傳的 ZIP，絕對不能把 ZIP 當成 app.py 的替代品。
+3. 打開原本的 Streamlit URL，選工作模式「V23.1全新選股驗效」。顯示 V23.1 就成功。
+   第一次如果仍舊版，Manage app > Reboot app 一次；後續上傳策略 JSON 不用 Reboot。
+4. 按「沿用現有行情，開始／接續V23.1驗效」。
+5. 研究完整基本面模型：展開「新增資料」，先下載 CSV 範本；匯入有公布時間的歷史營收、EPS/毛利率、法人訊號，再按驗效。
+6. 結果下載 V23_1_VALIDATION.zip 或 V23_1_VALIDATION.xlsx。
+
+注意：若缺具公告時點的歷史財報，完整基本面模型會顯示「資料不足」，這是防止回測偷看未來的必要保護。
+目標是扣成本後年化超額0050至少5百分點；目前尚無足夠證據證明已達成，不能正式下單。

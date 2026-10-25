@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "notes": "Finite development hypotheses. Weights and thresholds are our quantification, not formulas from the book. No active orders.",
+  "candidates": [
+    {"name":"v20_control", "weights":{"liquidity20":0.8,"high252":0.2},"policy":"none"},
+    {"name":"v21_old_candidate", "weights":{"liquidity20":0.4,"momentum20":0.4,"rsi_recovery":0.2},"policy":"none"},
+    {"name":"residual_trend", "weights":{"residual_momentum60":0.5,"high252":0.3,"residual_lowvol60":0.2},"policy":"none"},
+    {"name":"confirmed_contrarian", "weights":{"ks_confirmed_recovery":0.5,"residual_momentum60":0.3,"ks_absorption":0.2},"policy":"recovery_only"},
+    {"name":"patient_accumulation", "weights":{"ks_patience":0.4,"ks_absorption":0.3,"residual_lowvol60":0.3},"policy":"none"},
+    {"name":"demand_with_strength", "weights":{"ks_demand_balance":0.4,"ks_quiet_strength":0.3,"momentum120_skip20":0.3},"policy":"none"},
+    {"name":"trend_with_discipline", "weights":{"residual_momentum60":0.5,"high252":0.3,"residual_lowvol60":0.2},"policy":"discipline"},
+    {"name":"trend_with_risk_overlay", "weights":{"residual_momentum60":0.5,"high252":0.3,"residual_lowvol60":0.2},"policy":"risk_half"},
+    {"name":"heat_aware_leadership", "weights":{"ks_heat_safety":0.3,"residual_momentum20":0.4,"ks_demand_balance":0.3},"policy":"discipline"},
+    {"name":"simple_momentum", "weights":{"momentum60":1.0},"policy":"none"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "pool_rule": "KOSTO300",
+  "top_k": 10,
+  "capital": 1000000.0,
+  "fast_folds": 3,
+  "bootstrap_samples": 300,
+  "stage_confidence_floor": 0.03,
+  "sector_cap": 0.3,
+  "max_rsi": 84.0,
+  "max_bias20": 0.14,
+  "b3_confirmation_rank": 0.45,
+  "cost_overrides": {}
+}
